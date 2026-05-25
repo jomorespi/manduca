@@ -1,8 +1,8 @@
 ---
 import "../styles/theme.css";
 
-import { getConfig } from '../lib/config.js';
-const config = getConfig();
+import { getSettings } from '../lib/settings.js';
+const settings = getSettings();
 ---
 
 <!DOCTYPE html>
@@ -10,14 +10,14 @@ const config = getConfig();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{config.Content.Name}</title>
+    <title>{settings.Content.Name}</title>
 
     <style define:vars={{ 
-        primary: config.Colors.Primary,
-        highlight: config.Colors.Highlight,
-        bg: config.Colors.Background,
-        body: config.Colors.Body,
-        light: config.Colors.Light 
+        primary: settings.Colors.Primary,
+        highlight: settings.Colors.Highlight,
+        bg: settings.Colors.Background,
+        body: settings.Colors.Body,
+        light: settings.Colors.Light 
     }}>
         :root {
             --primary: var(--primary);

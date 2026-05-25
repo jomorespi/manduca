@@ -1,11 +1,11 @@
 ---
 import Header from '../components/Header.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { getConfig } from '../lib/config.js';
+import { getSettings } from '../lib/settings.js';
 
-const config = getConfig();
+const settings = getSettings();
 ---
 
-<BaseLayout config={config}>
-    <Header name={config.Content.Name} bio={config.Content.Bio} avatar={config.Content.Avatar} />
+<BaseLayout settings={settings}>
+    <Header name={settings.Content.Name} bio={settings.Content.Bio} avatar={settings.Content.Avatar} />
 </BaseLayout>
