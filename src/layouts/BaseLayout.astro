@@ -1,8 +1,21 @@
 ---
-import "../styles/theme.css";
+import "../assets/styles/theme.css";
+import { Font } from "astro:assets";
 
 import { getSettings } from '../lib/settings.js';
 const settings = getSettings();
+
+const font = settings.Style.Font;
+
+const fontMap = {
+    sans: 'font-sans',
+    serif: 'font-serif',
+    mono: 'font-mono'
+};
+
+const fontFamily = fontMap[font] || 'font-sans';
+
+const bodyClasses = `${fontFamily} text-body bg-light`
 ---
 
 <!DOCTYPE html>
@@ -27,8 +40,11 @@ const settings = getSettings();
             --light: var(--light);
         }
     </style>
+    <Font cssVariable="--font-inter" />
+    <Font cssVariable="--font-lora" />
+    <Font cssVariable="--font-jetbrains" />
 </head>
-<body class="text-body bg-light">
+<body class={bodyClasses}>
     <div class="container mx-auto px-5 flex flex-col min-h-screen">
         <slot />
     </div>

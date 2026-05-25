@@ -6,4 +6,8 @@
     --color-bg: var(--bg, #fff);
     --color-body: var(--body, #000);
     --color-light: var(--light, #efefef);
+
+    --font-sans: var(--font-inter);
+    --font-serif: var(--font-lora);
+    --font-mono: var(--font-jetbrains);
 }
