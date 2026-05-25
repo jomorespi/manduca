@@ -3,6 +3,7 @@ import Header from '../components/Header.astro';
 import Links from '../components/Links.astro';
 import Social from '../components/Social.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Footer from '../components/Footer.astro';
 import { getSettings } from '../lib/settings.js';
 
 const settings = getSettings();
@@ -14,4 +15,5 @@ const settings = getSettings();
         <Links links={settings.Links} />
         <Social social={settings.Social} />
     </main>
+    <Footer txt={settings.Footer.Text} />
 </BaseLayout>

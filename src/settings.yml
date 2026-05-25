@@ -1,8 +1,3 @@
-Content:
-  Name: 'John Doe'
-  Bio: 'Your new favourite person'
-  Avatar: 'default2.webp'
-
 Style:
   Font: 'sans' # sans (Inter), serif (Lora), mono (JetBrains Mono)
   Borders: false
@@ -16,6 +11,11 @@ Colors:
   Background: '#fff'
   Body: '#232323'
   Light: '#fefefe'
+
+Content:
+  Name: 'Jane Doe'
+  Bio: 'Your new favourite person'
+  Avatar: 'default2.webp'
 
 Links:
   'My project': 'https://myproject.me.com'
@@ -50,3 +50,6 @@ Social:
   Telegram: ''
   Strava: ''
   Custom: 'https://customlink.domain'
+
+Footer:
+  Text: 'No cookies, no forms, and no data collection.'
