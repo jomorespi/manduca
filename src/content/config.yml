@@ -1,0 +1,17 @@
+Content:
+  Name: 'John Doe'
+  Avatar: ''
+  Bio: 'Developer & Writer'
+
+Style:
+  Borders: false
+  Radius: true
+  AvatarShape: 'circle' # circle, square, rounded
+
+Links:
+  'My project': 'https://myproject.me.com'
+  'My videos': 'https://youtube.com'
+
+Social:
+  Linkedin: 'https://linkedin.com/me'
+  Twitter: 'https://x.com/me'

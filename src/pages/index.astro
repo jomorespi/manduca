@@ -1,5 +1,12 @@
 ---
+import "../styles/theme.css";
 
+import { readFileSync } from 'fs';
+import yaml from 'js-yaml';
+
+const configPath = new URL('../content/config.yml', import.meta.url);
+const configContent = readFileSync(configPath, 'utf-8');
+const config = yaml.load(configContent);
 ---
 
 <html lang="en">
@@ -12,6 +19,7 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<h1>{config.Content.Name}</h1>
+		<p>{config.Content.Bio}</p>
 	</body>
 </html>
