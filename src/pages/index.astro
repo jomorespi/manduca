@@ -1,5 +1,7 @@
 ---
 import Header from '../components/Header.astro';
+import Links from '../components/Links.astro';
+import Social from '../components/Social.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getSettings } from '../lib/settings.js';
 
@@ -7,5 +9,9 @@ const settings = getSettings();
 ---
 
 <BaseLayout settings={settings}>
-    <Header name={settings.Content.Name} bio={settings.Content.Bio} avatar={settings.Content.Avatar} />
+    <Header name={settings.Content.Name} bio={settings.Content.Bio} avatar={settings.Content.Avatar} rounded={settings.Style.AvatarShape}  />
+    <main>
+        <Links links={settings.Links} />
+        <Social social={settings.Social} />
+    </main>
 </BaseLayout>

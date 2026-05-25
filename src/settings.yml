@@ -1,12 +1,14 @@
 Content:
   Name: 'John Doe'
-  Avatar: ''
-  Bio: 'Developer & Writer'
+  Bio: 'Your new favourite person'
+  Avatar: 'default2.webp'
 
 Style:
+  Font: 'sans' # sans (Inter), serif (Lora), mono (JetBrains Mono)
   Borders: false
   Radius: true
   AvatarShape: 'circle' # circle, square, rounded
+  DefaultMode: 'light' # light / dark
 
 Colors:
   Primary: '#0ddeb0'
@@ -20,5 +22,31 @@ Links:
   'My videos': 'https://youtube.com'
 
 Social:
-  Linkedin: 'https://linkedin.com/me'
-  Twitter: 'https://x.com/me'
+  Linkedin: 'https://linkedin.com/'
+  Mastodon: 'https://mastodon.social'
+  Bluesky: ''
+  Threads: ''
+  Twitter: ''
+  Instagram: 'https://instagram.com'
+  Snapchat: ''
+  Facebook: 'https://facebook.com'
+  Vimeo: ''
+  YouTube: ''
+  TikTok: ''
+  Twitch: ''
+  Spotify: ''
+  GitHub: 'https://github.com'
+  GitLab: ''
+  StackOverflow: ''
+  Discord: ''
+  Behance: ''
+  Dribble: ''
+  Reddit: ''
+  Quora: ''
+  Substack: 'https://substack.com/'
+  Medium: ''
+  WordPress: ''
+  WhatsApp: ''
+  Telegram: ''
+  Strava: ''
+  Custom: 'https://customlink.domain'
