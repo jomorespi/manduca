@@ -4,10 +4,10 @@ const { links } = Astro.props;
 const activeLinks = Object.entries(links).filter(([_, url]) => url && url !== '');
 ---
 {activeLinks.length > 0 && (
-  <ul class="text-center">
+  <ul class="text-center text-lg my-20 grid gap-5 max-w-md mx-auto">
     {activeLinks.map(([title, url]) => (
       <li>
-        <a href={url} target="_blank" rel="noopener noreferrer">
+        <a href={url} class="shadow-lg border block p-2 rounded-full" target="_blank" rel="noopener noreferrer">
           {title}
         </a>
       </li>

@@ -1,9 +1,9 @@
 {
   "Style": {
-    "Font": "sans", // 'sans', 'serif' or 'mono'
+    "Font": "sans",
     "Borders": false,
     "Radius": true,
-    "AvatarShape": "circle", // 'circle', 'rounded' or 'square'
+    "AvatarShape": "circle",
     "DefaultMode": "light"
   },
   "Colors": {
@@ -16,9 +16,9 @@
   "Content": {
     "Name": "Jane Doe",
     "Bio": "Your new favourite person",
-    "Avatar": "default2.webp" // save your image at "/public/img/"
+    "Avatar": "default2.webp"
   },
-  "Links": { // As many links as you like
+  "Links": {
     "My project": "https://myproject.me.com",
     "My videos": "https://youtube.com"
   },
@@ -50,7 +50,7 @@
     "WhatsApp": "",
     "Telegram": "",
     "Strava": "",
-    "Custom": "https://customlink.domain" // Link icon
+    "Custom": "https://customlink.domain"
   },
   "Footer": {
     "Text": "No cookies, no forms, and no data collection."

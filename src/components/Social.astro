@@ -37,10 +37,10 @@ const socialIcons = {
 ---
 
 {activeSocial.length > 0 && (
-  <ul class="text-center flex items-center justify-center flex-wrap gap-5 text-xl">
+  <ul class="text-center flex items-center justify-center flex-wrap gap-5 text-2xl">
     {activeSocial.map(([platform, url]) => (
       <li>
-        <a href={url} aria-label={platform} target="_blank" rel="noopener noreferrer">
+        <a class="block text-dark" href={url} aria-label={platform} target="_blank" rel="noopener noreferrer">
           <i class={`${socialIcons[platform] || 'bi-link'}`}></i>
         </a>
       </li>
