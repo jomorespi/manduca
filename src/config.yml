@@ -8,6 +8,13 @@ Style:
   Radius: true
   AvatarShape: 'circle' # circle, square, rounded
 
+Colors:
+  Primary: '#0ddeb0'
+  Highlight: '#0ddeb0'
+  Background: '#fff'
+  Body: '#232323'
+  Light: '#fefefe'
+
 Links:
   'My project': 'https://myproject.me.com'
   'My videos': 'https://youtube.com'

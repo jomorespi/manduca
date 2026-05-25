@@ -1,25 +1,11 @@
 ---
-import "../styles/theme.css";
+import Header from '../components/Header.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getConfig } from '../lib/config.js';
 
-import { readFileSync } from 'fs';
-import yaml from 'js-yaml';
-
-const configPath = new URL('../content/config.yml', import.meta.url);
-const configContent = readFileSync(configPath, 'utf-8');
-const config = yaml.load(configContent);
+const config = getConfig();
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>{config.Content.Name}</h1>
-		<p>{config.Content.Bio}</p>
-	</body>
-</html>
+<BaseLayout config={config}>
+    <Header name={config.Content.Name} bio={config.Content.Bio} avatar={config.Content.Avatar} />
+</BaseLayout>

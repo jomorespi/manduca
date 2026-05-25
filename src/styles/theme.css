@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@theme {
+    --color-primary: var(--primary, #0ddeb0);
+    --color-highlight: var(--highlight, #0ddeb0);
+    --color-bg: var(--bg, #fff);
+    --color-body: var(--body, #000);
+    --color-light: var(--light, #efefef);
+}

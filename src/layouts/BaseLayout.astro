@@ -1,0 +1,34 @@
+---
+import "../styles/theme.css";
+
+import { getConfig } from '../lib/config.js';
+const config = getConfig();
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{config.Content.Name}</title>
+
+    <style define:vars={{ 
+        primary: config.Colors.Primary,
+        highlight: config.Colors.Highlight,
+        bg: config.Colors.Background,
+        body: config.Colors.Body,
+        light: config.Colors.Light 
+    }}>
+        :root {
+            --primary: var(--primary);
+            --highlight: var(--highlight);
+            --bg: var(--bg);
+            --body: var(--body);
+            --light: var(--light);
+        }
+    </style>
+</head>
+<body class="text-body bg-light">
+    <slot />
+</body>
+</html>
