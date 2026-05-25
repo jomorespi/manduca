@@ -1,13 +1,10 @@
-import { readFileSync } from 'fs';
-import yaml from 'js-yaml';
+import settingsData from '../settings.json';
 
 let cachedSettings = null;
 
 export function getSettings() {
   if (!cachedSettings) {
-    const settingsPath = new URL('../settings.yml', import.meta.url);
-    const settingsContent = readFileSync(settingsPath, 'utf-8');
-    cachedSettings = yaml.load(settingsContent);
+    cachedSettings = settingsData;
   }
   return cachedSettings;
 }

@@ -1,0 +1,58 @@
+{
+  "Style": {
+    "Font": "sans", // 'sans', 'serif' or 'mono'
+    "Borders": false,
+    "Radius": true,
+    "AvatarShape": "circle", // 'circle', 'rounded' or 'square'
+    "DefaultMode": "light"
+  },
+  "Colors": {
+    "Primary": "#0ddeb0",
+    "Highlight": "#0ddeb0",
+    "Background": "#fff",
+    "Body": "#232323",
+    "Light": "#fefefe"
+  },
+  "Content": {
+    "Name": "Jane Doe",
+    "Bio": "Your new favourite person",
+    "Avatar": "default2.webp" // save your image at "/public/img/"
+  },
+  "Links": { // As many links as you like
+    "My project": "https://myproject.me.com",
+    "My videos": "https://youtube.com"
+  },
+  "Social": {
+    "Linkedin": "https://linkedin.com/",
+    "Mastodon": "https://mastodon.social",
+    "Bluesky": "",
+    "Threads": "",
+    "Twitter": "",
+    "Instagram": "https://instagram.com",
+    "Snapchat": "",
+    "Facebook": "https://facebook.com",
+    "Vimeo": "",
+    "YouTube": "",
+    "TikTok": "",
+    "Twitch": "",
+    "Spotify": "",
+    "GitHub": "https://github.com",
+    "GitLab": "",
+    "StackOverflow": "",
+    "Discord": "",
+    "Behance": "",
+    "Dribble": "",
+    "Reddit": "",
+    "Quora": "",
+    "Substack": "https://substack.com/",
+    "Medium": "",
+    "WordPress": "",
+    "WhatsApp": "",
+    "Telegram": "",
+    "Strava": "",
+    "Custom": "https://customlink.domain" // Link icon
+  },
+  "Footer": {
+    "Text": "No cookies, no forms, and no data collection."
+  }
+}
