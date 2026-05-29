@@ -15,37 +15,29 @@ const fontMap = {
 
 const fontFamily = fontMap[font] || 'font-sans';
 
-const bodyClasses = `${fontFamily} text-body bg-light`
+const bodyClasses = `${fontFamily} text-body text-base bg-bg`
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={settings.Content.Language}>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{settings.Content.Name}</title>
+    <title>{settings.Header.Name}</title>
 
     <style define:vars={{ 
-        primary: settings.Colors.Primary,
-        highlight: settings.Colors.Highlight,
-        bg: settings.Colors.Background,
-        body: settings.Colors.Body,
-        light: settings.Colors.Light 
+        accent: settings.Style.AccentColor,
     }}>
-        :root {
-            --primary: var(--primary);
-            --highlight: var(--highlight);
-            --bg: var(--bg);
-            --body: var(--body);
-            --light: var(--light);
+        :root { 
+            /** TODO: Light / Dark theme */            
         }
     </style>
-    <Font cssVariable="--font-inter" />
-    <Font cssVariable="--font-lora" />
-    <Font cssVariable="--font-jetbrains" />
+    {settings.Style.Font === "sans" && <Font cssVariable="--font-inter" />}
+    {settings.Style.Font === "serif" && <Font cssVariable="--font-lora" />}
+    {settings.Style.Font === "mono" && <Font cssVariable="--font-jetbrains" />}
 </head>
 <body class={bodyClasses}>
-    <div class="container mx-auto px-5 flex flex-col min-h-screen">
+    <div class="container mx-auto px-4 min-h-screen">
         <slot />
     </div>
 </body>

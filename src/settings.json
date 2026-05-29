@@ -1,24 +1,22 @@
 {
   "Style": {
+    "Align": "center",
+    "Mode": "light",
     "Font": "sans",
-    "Borders": false,
-    "Radius": true,
-    "AvatarShape": "circle",
-    "DefaultMode": "light"
+    "AccentColor": "#0ddeb0",
+    "Decoration": "none"
   },
-  "Colors": {
-    "Primary": "#0ddeb0",
-    "Highlight": "#0ddeb0",
-    "Background": "#fff",
-    "Body": "#232323",
-    "Light": "#fefefe"
+  "Content" : {
+    "Language": "en"
   },
-  "Content": {
+  "Header": {
     "Name": "Jane Doe",
     "Bio": "Your new favourite person",
     "Avatar": "default2.webp"
   },
   "Links": {
+    "My last album": "https://bandcamp.com/me/myalbum",
+    "My last single": "https://youtube.com/watch/mysingle",
     "My project": "https://myproject.me.com",
     "My videos": "https://youtube.com"
   },
@@ -30,7 +28,7 @@
     "Twitter": "",
     "Instagram": "https://instagram.com",
     "Snapchat": "",
-    "Facebook": "https://facebook.com",
+    "Facebook": "",
     "Vimeo": "",
     "YouTube": "",
     "TikTok": "",
@@ -49,10 +47,14 @@
     "WordPress": "",
     "WhatsApp": "",
     "Telegram": "",
-    "Strava": "",
-    "Custom": "https://customlink.domain"
+    "Strava": ""
   },
   "Footer": {
-    "Text": "No cookies, no forms, and no data collection."
+    "Text": "No cookies, no forms, and no data collection.",
+    "Menu": {
+      "Cookies Policy": "/cookies",
+      "Privacy Policy": "/privacy",
+      "Legal Notice": "/legal"
+    }
   }
 }
