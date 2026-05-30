@@ -20,7 +20,7 @@ To use this template, just launch the console and type:
 ```sh
 pnpm create astro@latest my-project -- --template jomorespi/manduca
 cd my-project
-pnpm run dev
+pnpm dev
 ```
 
 <small>(of course, you can work with `npm` or `yarn` if you prefer)</small>
@@ -31,7 +31,7 @@ Alternatively, you can clone the repository:
 git clone https://github.com/jomorespi/manduca.git
 cd manduca
 pnpm install
-pnpm run dev
+pnpm dev
 ```
 
 ## Content and Customization
