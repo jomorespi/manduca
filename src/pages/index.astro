@@ -1,5 +1,5 @@
 ---
-import Header from '../components/Header.astro';
+import CardHeader from '../components/CardHeader.astro';
 import Links from '../components/Links.astro';
 import Social from '../components/Social.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -11,12 +11,11 @@ const settings = getSettings();
 
 <BaseLayout settings={settings}>
     <div class="card mx-auto sm:p-7 w-96 max-w-full sm:shadow-lg rounded-3xl my-10 lg:mt-20">
-        <Header name={settings.Header.Name} bio={settings.Header.Bio} avatar={settings.Header.Avatar} rounded={settings.Style.AvatarShape}  />
+        <CardHeader name={settings.Header.Name} bio={settings.Header.Bio} avatar={settings.Header.Avatar} />
         <main>
             <Links links={settings.Links} />
-            <div class="border-t border-borders mt-6 mb-5"></div>
             <Social social={settings.Social} />
         </main>
-        <Footer txt={settings.Footer.Text} />
+        <Footer txt={settings.Footer.Text} links={settings.Footer.Menu} class="mt-6" />
     </div>
 </BaseLayout>

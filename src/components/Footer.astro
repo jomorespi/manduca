@@ -1,7 +1,10 @@
 ---
-const { txt } = Astro.props;
+import FooterMenu from "./FooterMenu.astro";
+
+const { txt, links, class: className } = Astro.props;
 ---
 
-<footer class="text-center text-sm mt-6 text-muted">
+<footer class:list={['text-center text-sm text-muted', className]}>
     <p>{ txt }</p>
+    <FooterMenu links={ links } />
 </footer>

@@ -49,9 +49,9 @@
   "Footer": {
     "Text": "No cookies, no forms, and no data collection.",
     "Menu": {
-      "Page 1": "/page1",
-      "Page 2": "/page2",
-      "Page 3": "/page3"
+      "Cakes Policy": "/cakes",
+      "Bacon Policy": "/bacon",
+      "Tuna Notice": "/tuna"
     }
   }
 }

@@ -1,35 +1,19 @@
 ---
-const { name, bio, avatar, rounded = 'circle' } = Astro.props;
+const { name, bio, avatar } = Astro.props;
 const baseUrl = import.meta.env.BASE_URL
 
 const avatarSrc = avatar 
   ? `${baseUrl}img/${avatar}`
   : `${baseUrl}img/default.webp`;
 
-const radiusMap = {
-    circle: 'rounded-full',
-    rounded: 'rounded-lg',
-    square: 'rounded-none'
-};
-
-const imgRadius = radiusMap[rounded] || 'rounded-full';
-const imgClasses = `${imgRadius} mx-auto w-18 h-18 overflow-hidden mb-4`;
 ---
 
-<header class="text-center mb-7">
+<header class="mt-4 mb-12 mx-auto max-w-prose w-full">
 
-    <div class={imgClasses}>
-      <img
-        src={avatarSrc}
-        class=""
-        alt=""
-        width="72"
-        height="72"
-        loading="eager"
-        fetchpriority="high"
-      />
-    </div>
-
-    <h1 class="font-semibold text-lg">{ name }</h1>
-    {bio && <p class="mt-0.5 text-muted">{bio}</p>}
+    <a href={import.meta.env.BASE_URL || './'} class="block">
+      <div>
+        <h1 class="font-semibold text-lg">{ name }</h1>
+        {bio && <p class="text-muted">{bio}</p>}
+      </div>
+    </a>
 </header>
