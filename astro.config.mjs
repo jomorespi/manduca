@@ -7,6 +7,9 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  build: {
+    relative: true
+  },
   fonts: [{
     provider: fontProviders.local(),
     name: "Inter",

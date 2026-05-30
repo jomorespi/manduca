@@ -1,10 +1,8 @@
 ---
 const { name, bio, avatar, align, deco } = Astro.props;
-const baseUrl = import.meta.env.BASE_URL
 
-const avatarSrc = avatar 
-  ? `${baseUrl}img/${avatar}`
-  : `${baseUrl}img/default.webp`;
+const avatarPath = avatar ? `img/${avatar}` : 'img/default.webp';
+const fallbackPath = 'img/default.webp';
 
 let imgClasses = 'rounded-full min-w-18 w-18 h-18 relative';
 let headerClasses = 'mb-7 flex gap-4';
@@ -21,24 +19,38 @@ if(align === 'center') {
 ---
 
 <header class={headerClasses}>
+  <div class={imgClasses}>
+    <img
+      data-dynamic-src={avatarPath}
+      data-fallback={fallbackPath}
+      class="rounded-full"
+      alt=""
+      width="72"
+      height="72"
+      loading="eager"
+      fetchpriority="high"
+    />
 
-    <div class={imgClasses}>
-      <img
-        src={avatarSrc}
-        class="rounded-full"
-        alt=""
-        width="72"
-        height="72"
-        loading="eager"
-        fetchpriority="high"
-      />
-
-      { (deco === 'all' || deco === 'avatar') && <div aria-hidden="true" class="w-4 h-4 border-2 border-bg rounded-full absolute bottom-0 right-0 bg-accent"></div> }
-    </div>
-    
-    <div>
-      <h1 class="font-semibold text-lg">{ name }</h1>
-      { (deco === 'all' || deco === 'lines') && <div aria-hidden="true" class={lineClasses}></div> }
-      {bio && <p class="mt-0.5 text-muted">{bio}</p>}
-    </div>
+    { (deco === 'all' || deco === 'avatar') && 
+      <div aria-hidden="true" class="w-4 h-4 border-2 border-bg rounded-full absolute bottom-0 right-0 bg-accent"></div> 
+    }
+  </div>
+  
+  <div>
+    <h1 class="font-semibold text-lg">{ name }</h1>
+    { (deco === 'all' || deco === 'lines') && 
+      <div aria-hidden="true" class={lineClasses}></div> 
+    }
+    {bio && <p class="mt-0.5 text-muted">{bio}</p>}
+  </div>
 </header>
+
+<script>
+  import { initDynamicImages } from '../assets/scripts/resolve-path.js';
+  
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initDynamicImages);
+  } else {
+    initDynamicImages();
+  }
+</script>
