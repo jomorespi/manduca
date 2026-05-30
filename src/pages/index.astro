@@ -18,7 +18,7 @@ const containerClass = `card mx-auto sm:p-7 w-96 max-w-full sm:shadow-lg rounded
         <CardHeader name={settings.Header.Name} bio={settings.Header.Bio} avatar={settings.Header.Avatar} align={align} deco={settings.Style.Decoration} />
         <main>
             <Links links={settings.Links} />
-            <Social social={settings.Social} />
+            <Social social={settings.Social} align={align} />
         </main>
         <Footer txt={settings.Footer.Text} links={settings.Footer.Menu} class="mt-6" />
     </div>

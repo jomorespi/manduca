@@ -1,7 +1,7 @@
 ---
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-const { social } = Astro.props;
+const { social, align } = Astro.props;
 
 const activeSocial = Object.entries(social).filter(([_, url]) => url && url !== '');
 
@@ -22,10 +22,16 @@ for (const social of defaultSocials) {
   const iconLower = social.toLowerCase().replace(/([a-z])([A-Z])/g, '$1-$2');
   socialIcons[social] = `bi-${iconLower}`;
 }
+
+let listClasses = 'flex items-center flex-wrap gap-2 text-base';
+
+if( align === 'center' ) {
+  listClasses = listClasses + ' justify-center';
+}
 ---
 
 {activeSocial.length > 0 && (
-  <ul class="flex items-center justify-center flex-wrap gap-2 text-base">
+  <ul class={listClasses}>
     {activeSocial.map(([platform, url]) => (
       <li>
         <a class="grid place-content-center text-dark bg-light rounded-full w-8 h-8 hover:bg-accent focus:bg-accent hover:scale-105 focus:scale-105 transition duration-500" href={url} aria-label={platform} target="_blank" rel="noopener noreferrer">
