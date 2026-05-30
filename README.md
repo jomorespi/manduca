@@ -1,33 +1,41 @@
-# Astro Starter Kit: Minimal
+# Manduca Astro Theme
+
+**Manduca** is a **Link in Bio** theme for [Astro](https://astro.build). 
+
+[![Live Demo](https://img.shields.io/badge/live-demo-ef0fff?style=flat-square)](#)
+[![Astro](https://img.shields.io/badge/Astro-6-3d50f5?logo=astro&logoColor=white)](https://astro.build)
+
+It comes with some basic options and a modern and lightweight Tailwind4-powered layout system. 
+
+If you want to publish your custom, self-hosted and accessible links homepage, Manduca is simple a fast solution. It only needs a few minutes for customization and deployment.
+
+
+## Quick start
+
+To use this template, just launch the console and type:
 
 ```sh
-pnpm create astro@latest -- --template minimal
+pnpm create astro@latest my-project -- --template jomorespi/manduca
+cd my-project
+pnpm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+If you prefer, you can clone this repository:
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```sh
+git clone https://github.com/jomorespi/manduca.git
+cd manduca
+pnpm install
+pnpm run dev
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Content and Customization
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+**Manduca** comes with a 
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Learn more
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
+### Astro available commands
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
@@ -38,6 +46,11 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `pnpm astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Feel free to check [Astro documentation](https://docs.astro.build) or jump into Astro [Discord server](https://astro.build/chat).
+
+
+
+
+
+
