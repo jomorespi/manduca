@@ -16,6 +16,6 @@ const settings = getSettings();
           {title && <h1>{title}</h1>}
           <slot />
       </main>
-      <Footer txt={settings.Footer.Text} links={settings.Footer.Menu} class="pb-6 pt-12 mt-auto" />
+      <Footer txt={settings.Footer.Text} links={settings.Footer.Menu} align="center" class="pb-6 pt-12 mt-auto" />
     </div>
 </BaseLayout>
