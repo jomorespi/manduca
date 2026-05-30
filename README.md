@@ -2,10 +2,12 @@
 
 **Manduca** is a **Link in Bio** theme for [Astro](https://astro.build). 
 
+[![Live Demo](https://img.shields.io/badge/live-demo-ef0fff?style=flat-square)](https://jomorespi.github.io/manduca/)
+
 ![Theme Screenshots](/screenshots/screenshots-2cols.webp)
 
-[![Live Demo](https://img.shields.io/badge/live-demo-ef0fff?style=flat-square)](#)
 [![Astro](https://img.shields.io/badge/Astro-6-3d50f5?style=flat-square&logo=astro&logoColor=white)](https://astro.build)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind-4-00bcff?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 
 It comes with some basic options and a modern, lightweight Tailwind CSS 4-powered layout system. 
 
