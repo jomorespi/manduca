@@ -2,14 +2,14 @@
 
 **Manduca** is a **Link in Bio** theme for [Astro](https://astro.build). 
 
+![Theme Screenshots](/screenshots/screenshots.webp)
+
 [![Live Demo](https://img.shields.io/badge/live-demo-ef0fff?style=flat-square)](#)
 [![Astro](https://img.shields.io/badge/Astro-6-3d50f5?style=flat-square&logo=astro&logoColor=white)](https://astro.build)
 
 It comes with some basic options and a modern, lightweight Tailwind CSS 4-powered layout system. 
 
 If you want to publish your own custom, self-hosted, and accessible links homepage, Manduca is a simple and fast solution. It only needs a few minutes for customization and deployment.
-
-![Theme Screenshots](https://www.markdownlang.com/static/images/logo.png)
 
 ## Quick start
 
