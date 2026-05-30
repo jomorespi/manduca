@@ -10,7 +10,7 @@ const settings = getSettings();
 ---
 
 <BaseLayout settings={settings}>
-    <div class="card mx-auto p-7 w-96 max-w-full sm:max-w-11/12 shadow-lg rounded-3xl my-10 lg:mt-20">
+    <div class="card mx-auto sm:p-7 w-96 max-w-full sm:shadow-lg rounded-3xl my-10 lg:mt-20">
         <Header name={settings.Header.Name} bio={settings.Header.Bio} avatar={settings.Header.Avatar} rounded={settings.Style.AvatarShape}  />
         <main>
             <Links links={settings.Links} />

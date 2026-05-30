@@ -25,19 +25,12 @@ const bodyClasses = `${fontFamily} text-body text-base bg-bg`
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{settings.Header.Name}</title>
 
-    <style define:vars={{ 
-        accent: settings.Style.AccentColor,
-    }}>
-        :root { 
-            /** TODO: Light / Dark theme */            
-        }
-    </style>
     {settings.Style.Font === "sans" && <Font cssVariable="--font-inter" />}
     {settings.Style.Font === "serif" && <Font cssVariable="--font-lora" />}
     {settings.Style.Font === "mono" && <Font cssVariable="--font-jetbrains" />}
 </head>
 <body class={bodyClasses}>
-    <div class="container mx-auto px-4 min-h-screen">
+    <div class="container mx-auto px-5 min-h-screen">
         <slot />
     </div>
 </body>
