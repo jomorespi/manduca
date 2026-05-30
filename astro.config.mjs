@@ -11,35 +11,19 @@ export default defineConfig({
     provider: fontProviders.local(),
     name: "Inter",
     cssVariable: "--font-inter",
+    styles: ["normal"],
+    formats: ["woff2"],
+    fallbacks: ["sans-serif"],
     options: {
       variants: [{
         src: ['./src/assets/fonts/InterVariable.woff2'],
-        weight: 'normal',
+        weight: '100 700',
         style: 'normal'
-      }]
-    }
-  }, 
-  {
-    provider: fontProviders.local(),
-    name: "Lora",
-    cssVariable: "--font-lora",
-    options: {
-      variants: [{
-        src: ['./src/assets/fonts/Lora-VariableFont_wght.ttf'],
-        weight: 'normal',
-        style: 'normal'
-      }]
-    }
-  },
-  {
-    provider: fontProviders.local(),
-    name: "JetBrains Mono",
-    cssVariable: "--font-jetbrains",
-    options: {
-      variants: [{
-        src: ['./src/assets/fonts/JetBrainsMono.ttf'],
-        weight: 'normal',
-        style: 'normal'
+      },
+      {
+        src: ['./src/assets/fonts/InterVariable-Italic.woff2'],
+        weight: '100 700',
+        style: 'italic'
       }]
     }
   }]

@@ -5,17 +5,7 @@ import { Font } from "astro:assets";
 import { getSettings } from '../lib/settings.js';
 const settings = getSettings();
 
-const font = settings.Style.Font;
-
-const fontMap = {
-    sans: 'font-sans',
-    serif: 'font-serif',
-    mono: 'font-mono'
-};
-
-const fontFamily = fontMap[font] || 'font-sans';
-
-const bodyClasses = `${fontFamily} text-body text-base bg-bg`
+const bodyClasses = `font-sans text-body text-base bg-bg`
 ---
 
 <!DOCTYPE html>
@@ -24,13 +14,12 @@ const bodyClasses = `${fontFamily} text-body text-base bg-bg`
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{settings.Header.Name}</title>
+    <meta name="description" content="{settings.Header.Bio}">
 
-    {settings.Style.Font === "sans" && <Font cssVariable="--font-inter" />}
-    {settings.Style.Font === "serif" && <Font cssVariable="--font-lora" />}
-    {settings.Style.Font === "mono" && <Font cssVariable="--font-jetbrains" />}
+    <Font cssVariable="--font-inter" preload />
 </head>
 <body class={bodyClasses}>
-    <div class="container mx-auto px-5 min-h-screen">
+    <div class="container mx-auto px-5">
         <slot />
     </div>
 </body>
