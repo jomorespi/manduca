@@ -10,20 +10,6 @@ export function resolveAssetUrl(path) {
   return `/${path.replace(/^\//, '')}`;
 }
 
-// Links
-export function resolveLinkUrl(path) {
-  if (path.startsWith('http://') || path.startsWith('https://') || path.startsWith('//')) {
-    return path;
-  }
-  
-  if (path.startsWith('./') || path.startsWith('../')) {
-    return path;
-  }
-  
-  return resolveAssetUrl(path);
-}
-
-// Images
 export function initDynamicImages() {
   const images = document.querySelectorAll('[data-dynamic-src]');
   images.forEach((img) => {
@@ -35,17 +21,6 @@ export function initDynamicImages() {
           img.src = resolveAssetUrl(img.dataset.fallback);
         }
       };
-    }
-  });
-}
-
-// Dynamic Links
-export function initDynamicLinks() {
-  const links = document.querySelectorAll('[data-dynamic-href]');
-  links.forEach((link) => {
-    const originalPath = link.dataset.dynamicHref;
-    if (originalPath) {
-      link.href = resolveLinkUrl(originalPath);
     }
   });
 }

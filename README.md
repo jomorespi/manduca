@@ -87,7 +87,7 @@ If you add a custom item, it will also appear with a link icon:
 
 ```json
 "Text": "", # Just a copyright, date, or disclaimer text in the footer
-"Menu": {}  # If you need to add custom content pages to your website, you can link them from this menu
+"Menu": {}  # If you need to add custom content pages to your website, you can link them from this menu. Use relative links (without the leading slash). Examples: "about", "contact", "policy"
 ```
 
 ### Content pages

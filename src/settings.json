@@ -50,9 +50,9 @@
   "Footer": {
     "Text": "No cookies, no forms, and no data collection.",
     "Menu": {
-      "Cakes Policy": "/cakes",
-      "Meat Policy": "/meat",
-      "Fish Notice": "/fish"
+      "Cakes Policy": "cakes",
+      "Meat Policy": "meat",
+      "Fish Notice": "fish"
     }
   }
 }
