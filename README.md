@@ -23,7 +23,9 @@ cd my-project
 pnpm run dev
 ```
 
-If you prefer, you can clone this repository:
+(of course, you can work with `npm` or `yarn` as well)
+
+If you prefer, you can clone the repository:
 
 ```sh
 git clone https://github.com/jomorespi/manduca.git
@@ -54,21 +56,21 @@ You'll find a few options in the settings file:
 
 #### Style
 ```json
-"Align": "center", # Two layout modes: center / left
-"Decoration": "all" # Four options for decorative elements: avatar / lines / all / none
+"Align": "center", // Two layout modes: center / left
+"Decoration": "all" // Four options for decorative elements: avatar / lines / all / none
 ```
 
 #### Content
 
 ```json
-"Language": "en" # Make sure to use a valid ISO Language Code (see w3schools.com/tags/ref_language_codes.asp)
+"Language": "en" // Make sure to use a valid ISO Language Code (see w3schools.com/tags/ref_language_codes.asp)
 ```
 
 #### Header
 ```json
-"Name": "", # Your name
-"Bio": "", # Description text
-"Avatar": "default2.webp" # Save your image in the folder: public/img
+"Name": "", // Your name
+"Bio": "", // Description text
+"Avatar": "default2.webp" // Save your image in the folder: public/img
 ```
 
 #### Links
@@ -77,7 +79,7 @@ Just add your links following the examples in the file. They will appear on the 
 
 #### Social
 
-The available social media icons are: Linkedin, Mastodon, Bluesky, Threads, Twitter, Instagram, Pinterest, Snapchat, Facebook, Vimeo, YouTube, TikTok, Twitch, Spotify, GitHub, GitLab, StackOverflow, Discord, Behance, Dribbble, Reddit, Quora, Substack, Medium, WordPress, WhatsApp, Telegram, and Strava.
+The available social media icons are: Linkedin, Mastodon, Bluesky, Threads, Twitter, Instagram, Pinterest, Snapchat, Facebook, Vimeo, YouTube, TikTok, Twitch, Spotify, GitHub, GitLab, StackOverflow, Discord, Behance, Dribbble, Reddit, Quora, Substack, Medium, WordPress, WhatsApp, Telegram and Strava.
 
 If you add a custom item, it will also appear with a link icon:
 
@@ -88,8 +90,8 @@ If you add a custom item, it will also appear with a link icon:
 #### Footer
 
 ```json
-"Text": "", # Just a copyright, date, or disclaimer text in the footer
-"Menu": {}  # If you need to add custom content pages to your website, you can link them from this menu. Use relative links (without the leading slash). Examples: "about", "contact", "policy"
+"Text": "", // Just a copyright, date, or disclaimer text in the footer
+"Menu": {}  // If you need to add custom content pages to your website, you can link them from this menu. Use relative links (without the leading slash). Examples: "about", "contact", "policy"
 ```
 
 ### Content pages
