@@ -9,7 +9,7 @@ import { getSettings } from '../lib/settings.js';
 const settings = getSettings();
 const deco = settings.Style.Decoration;
 const align = settings.Style.Align;
-const alignClass = align === 'left' ? 'text-left' : 'text-center';
+const alignClass = align === 'center' ? 'text-center' : 'text-left';
 const containerClass = `card mx-auto sm:p-7 w-96 max-w-full sm:shadow-lg rounded-3xl my-10 lg:mt-20 ${alignClass}`
 
 let lineClasses = 'w-12 h-0.5 rounded-full bg-accent mb-6 mt-6';
