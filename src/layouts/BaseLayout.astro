@@ -1,5 +1,5 @@
 ---
-import "../assets/styles/style.css";
+import "../assets/css/style.css";
 import { Font } from "astro:assets";
 import { getSettings } from '../lib/settings.js';
 
@@ -31,5 +31,7 @@ const bodyClasses = `font-sans text-body text-base bg-bg`
     <div class="container mx-auto px-5">
         <slot />
     </div>
+
+    <script src="../assets/js/favicon.js"></script>
 </body>
 </html>
