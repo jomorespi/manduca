@@ -23,9 +23,9 @@ cd my-project
 pnpm run dev
 ```
 
-(of course, you can work with `npm` or `yarn` as well)
+<small>(of course, you can work with `npm` or `yarn` if you prefer)</small>
 
-If you prefer, you can clone the repository:
+Alternatively, you can clone the repository:
 
 ```sh
 git clone https://github.com/jomorespi/manduca.git
