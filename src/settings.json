@@ -1,7 +1,7 @@
 {
   "Style": {
-    "Align": "center",
-    "Decoration": "none"
+    "Align": "left",
+    "Decoration": "all"
   },
   "Content" : {
     "Language": "en"
@@ -23,7 +23,8 @@
     "Bluesky": "",
     "Threads": "",
     "Twitter": "",
-    "Instagram": "https://instagram.com",
+    "Instagram": "",
+    "Pinterest": "https://pinterest.com",
     "Snapchat": "",
     "Facebook": "",
     "Vimeo": "",
@@ -36,8 +37,8 @@
     "StackOverflow": "",
     "Discord": "",
     "Behance": "",
-    "Dribble": "",
-    "Reddit": "",
+    "Dribbble": "",
+    "Reddit": "https://www.reddit.com/",
     "Quora": "",
     "Substack": "",
     "Medium": "",
@@ -50,8 +51,8 @@
     "Text": "No cookies, no forms, and no data collection.",
     "Menu": {
       "Cakes Policy": "/cakes",
-      "Bacon Policy": "/bacon",
-      "Tuna Notice": "/tuna"
+      "Meat Policy": "/meat",
+      "Fish Notice": "/fish"
     }
   }
 }

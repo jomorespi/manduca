@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/PageLayout.astro
-title: "Bacon Policy"
+title: "Meat Policy"
 ---
 
 Bacon ipsum dolor amet meatball ham hock pork chop rump tri-tip. Sausage swine tail kevin leberkas. Shank picanha pig frankfurter jowl ribeye t-bone short loin boudin salami drumstick. Corned beef turkey pastrami, flank leberkas short ribs cupim ground round frankfurter. Alcatra strip steak frankfurter chislic landjaeger, pork loin pork chop capicola bresaola flank.
@@ -13,4 +13,4 @@ Cupim frankfurter sirloin turducken flank fatback capicola swine meatloaf pastra
 
 Venison chuck kevin cow pork. Boudin ball tip buffalo tri-tip, pig biltong alcatra leberkas spare ribs pork chop landjaeger bacon pork ham hock shankle. Filet mignon short loin ham meatloaf, doner turkey tongue. Bresaola doner pork chop, meatloaf sirloin kevin biltong. Ground round strip steak picanha, ribeye corned beef brisket turducken kevin chicken hamburger.
 
-**Text source:** [Bacon Ipsum](https://baconipsum.com)
+**Placeholder text source:** [Bacon Ipsum](https://baconipsum.com)

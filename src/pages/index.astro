@@ -7,11 +7,15 @@ import Footer from '../components/Footer.astro';
 import { getSettings } from '../lib/settings.js';
 
 const settings = getSettings();
+const align = settings.Style.Align;
+const alignClass = align === 'left' ? 'text-left' : 'text-center';
+
+const containerClass = `card mx-auto sm:p-7 w-96 max-w-full sm:shadow-lg rounded-3xl my-10 lg:mt-20 ${alignClass}`
 ---
 
 <BaseLayout settings={settings}>
-    <div class="card mx-auto sm:p-7 w-96 max-w-full sm:shadow-lg rounded-3xl my-10 lg:mt-20">
-        <CardHeader name={settings.Header.Name} bio={settings.Header.Bio} avatar={settings.Header.Avatar} />
+    <div class={containerClass}>
+        <CardHeader name={settings.Header.Name} bio={settings.Header.Bio} avatar={settings.Header.Avatar} align={align} deco={settings.Style.Decoration} />
         <main>
             <Links links={settings.Links} />
             <Social social={settings.Social} />

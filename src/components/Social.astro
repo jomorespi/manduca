@@ -6,38 +6,26 @@ const { social } = Astro.props;
 const activeSocial = Object.entries(social).filter(([_, url]) => url && url !== '');
 
 const socialIcons = {
-  Linkedin: 'bi-linkedin',
-  Mastodon: 'bi-mastodon',
-  Bluesky: 'bi-bluesky',
-  Threads: 'bi-threads',
-  Twitter: 'bi-twitter-x',
-  Instagram: 'bi-instagram',
-  Snapchat: 'bi-snapchat',
-  Facebook: 'bi-facebook',
-  Vimeo: 'bi-vimeo',
-  YouTube: 'bi-youtube',
-  TikTok: 'bi-tiktok',
-  Twitch: 'bi-twitch',
-  Spotify: 'bi-spotify',
-  GitHub: 'bi-github',
-  GitLab: 'bi-gitlab',
-  StackOverflow: 'bi-stack-overflow',
-  Discord: 'bi-discord',
-  Behance: 'bi-behance',
-  Dribble: 'bi-dribbble',
-  Reddit: 'bi-reddit',
-  Quora: 'bi-quora',
-  Substack: 'bi-substack',
-  Medium: 'bi-medium',
-  WordPress: 'bi-wordpress',
-  WhatsApp: 'bi-whatsapp',
-  Telegram: 'bi-telegram',
-  Strava: 'bi-strava',
-};
+  'StackOverflow': 'bi-stack-overflow',
+  'Twitter': 'bi-twitter-x',
+} as Record<string, string>;
+
+const defaultSocials = [
+  'Linkedin', 'Mastodon', 'Bluesky', 'Threads', 'Instagram',
+  'Pinterest', 'Snapchat', 'Facebook', 'Vimeo', 'YouTube',
+  'TikTok', 'Twitch', 'Spotify', 'GitHub', 'GitLab',
+  'Discord', 'Behance', 'Dribbble', 'Reddit', 'Quora',
+  'Substack', 'Medium', 'WordPress', 'WhatsApp', 'Telegram', 'Strava'
+];
+
+for (const social of defaultSocials) {
+  const iconLower = social.toLowerCase().replace(/([a-z])([A-Z])/g, '$1-$2');
+  socialIcons[social] = `bi-${iconLower}`;
+}
 ---
 
 {activeSocial.length > 0 && (
-  <ul class="text-center flex items-center justify-center flex-wrap gap-2 text-base">
+  <ul class="flex items-center justify-center flex-wrap gap-2 text-base">
     {activeSocial.map(([platform, url]) => (
       <li>
         <a class="grid place-content-center text-dark bg-light rounded-full w-8 h-8 hover:bg-accent focus:bg-accent hover:scale-105 focus:scale-105 transition duration-500" href={url} aria-label={platform} target="_blank" rel="noopener noreferrer">

@@ -1,6 +1,6 @@
 --- 
 layout: ../layouts/PageLayout.astro 
-title: "Tuna Notice" 
+title: "Fish Notice" 
 ---  
 
 Algae eater squeaker beaked sandfish sawfish panga; grenadier bramble shark. Scorpionfish flatfish combtail gourami roosterfish, bigscale fish dartfish weever walleye pollock tiger shovelnose catfish kuhli loach. Sand diver Mexican blind cavefish sandburrower merluccid hake common tunny; African lungfish Pacific saury. Demoiselle cutthroat eel smalltooth sawfish kelpfish huchen guitarfish topminnow Pacific herring Blenny houndshark Pacific argentine silver hake triplefin blenny. Morid cod dory spotted danio man-of-war fish; paradise fish neon tetra Black sea bass. Regal whiptail catfish forehead brooder clownfish emperor bream Shingle Fish cobia kuhli loach wolf-eel loweye catfish squawfish.
@@ -13,4 +13,4 @@ Trumpetfish handfish, Australian grayling, "black dragonfish, beaked salmon zebr
 
 Australian grayling, slimy sculpin tenuis snakehead common carp Redfin perch handfish Ragfish silver driftfish skipping goby. Torpedo sucker European chub garpike whiptail gulper bonito, worm eel bango kaluga, kingfish torpedo butterfly ray tigerperch, pelican eel southern sandfish arrowtooth eel. Zebra tilapia, Old World knifefish grayling whiptail gulper gulf menhaden; sand eel scabbard fish, crucian carp tadpole fish righteye flounder. Threadsail gulf menhaden turkeyfish warbonnet spinyfin fierasfer Pacific herring, Antarctic icefish Australian herring; sabertooth fish dogfish electric catfish goldspotted killifish, barbeled dragonfish mrigal, "ricefish cuchia flyingfish," catla flabby whalefish.
 
-**Text source:** [Tuna Ipsum](https://tunaipsum.com/)
+**Placeholder text source:** [Tuna Ipsum](https://tunaipsum.com/)

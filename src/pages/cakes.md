@@ -35,4 +35,4 @@ Chocolate bar cheesecake gingerbread cheesecake lemon drops. Chupa chups gummi b
 
 ---
 
-**Text source:** [Cupcake Ipsum](https://cupcakeipsum.com)
+**Placeholder text source:** [Cupcake Ipsum](https://cupcakeipsum.com)

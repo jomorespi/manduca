@@ -11,7 +11,7 @@ const settings = getSettings();
 
 <BaseLayout title={title}>
     <div class="flex flex-col min-h-screen">
-      <Header name={settings.Header.Name} bio={settings.Header.Bio} avatar={settings.Header.Avatar} />
+      <Header name={settings.Header.Name} bio={settings.Header.Bio} />
       <main class="page-content max-w-prose mx-auto">
           {title && <h1>{title}</h1>}
           <slot />
