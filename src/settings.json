@@ -12,10 +12,10 @@
     "Avatar": "default2.webp"
   },
   "Links": {
-    "My last album": "https://bandcamp.com/me/myalbum",
-    "My last video": "https://youtube.com",
-    "My thoughts": "https://mythoughts.com/blog",
-    "My project": "https://myproject.me.com"
+    "My last album": "#",
+    "My last video": "#",
+    "My thoughts": "#",
+    "My project": "#"
   },
   "Social": {
     "Linkedin": "https://linkedin.com/",
