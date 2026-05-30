@@ -2,7 +2,7 @@
 
 **Manduca** is a **Link in Bio** theme for [Astro](https://astro.build). 
 
-[![Live Demo](https://img.shields.io/badge/live-demo-ef0fff?style=flat-square)](https://jomorespi.github.io/manduca/)
+[![Live Demo](https://img.shields.io/badge/live-demo-ef0fff?style=flat-square)](https://manduca-astro-theme.netlify.app/)
 
 ![Theme Screenshots](/screenshots/manduca-screenshot.webp)
 
