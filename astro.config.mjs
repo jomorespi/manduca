@@ -6,6 +6,9 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
+    build: {
+      assetsInlineLimit: 100000
+    }
   },
   build: {
     relative: true,
