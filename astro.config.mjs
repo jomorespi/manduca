@@ -8,7 +8,9 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   build: {
-    relative: true
+    relative: true,
+    inlineStylesheets: 'auto',
+    assets: '_astro'
   },
   fonts: [{
     provider: fontProviders.local(),
