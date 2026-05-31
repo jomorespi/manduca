@@ -45,7 +45,7 @@ Furthermore, thanks to the power of Tailwind CSS 4, you can manipulate its appea
     - Write your name and description. Add your profile image.
     - Set your custom links and social media profiles.
 2. Open `src/assets/styles/theme.css`
-    - Set your custom accent color.
+    - Set your custom accent color (make sure we all can enjoy your site: [whocanuse.com](https://www.whocanuse.com/)).
     - Change anything you want.
 
 By manipulating only these two files, you'll have your custom Link in Bio page ready.
@@ -76,6 +76,11 @@ You'll find a few options in the settings file:
 #### Links
 
 Just add your links following the examples in the file. They will appear on the homepage as large buttons.
+
+```json
+"My last album": "https://bandcamp.com/me/myalbum",
+"My last video": "https://vimeo.com/myvideo",
+```
 
 #### Social
 
