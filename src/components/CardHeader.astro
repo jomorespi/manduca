@@ -21,14 +21,14 @@ if(align === 'center') {
 <header class={headerClasses}>
   <div class={imgClasses}>
     <img
-      data-dynamic-src={avatarPath}
-      data-fallback={fallbackPath}
+      src={avatarPath}
       class="rounded-full"
-      alt=""
+      alt={name || "Avatar"}
       width="72"
       height="72"
       loading="eager"
       fetchpriority="high"
+      onerror={`this.onerror=null; this.src='${fallbackPath}'`}
     />
 
     { (deco === 'all' || deco === 'avatar') && 
