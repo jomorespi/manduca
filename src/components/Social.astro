@@ -1,12 +1,7 @@
 ---
-import bootstrapCSS from 'bootstrap-icons/font/bootstrap-icons.css?raw';
+import '../assets/fonts/bootstrap-icons.css';
 
 const { social, align } = Astro.props;
-
-const fixedBootstrapCSS = bootstrapCSS.replace(
-  '@font-face {', 
-  '@font-face { font-display: swap; '
-);
 
 const activeSocial = Object.entries(social).filter(([_, url]) => url && url !== '');
 
@@ -34,10 +29,6 @@ if( align === 'center' ) {
   listClasses = listClasses + ' justify-center';
 }
 ---
-
-<style is:inline>
-  {fixedBootstrapCSS}
-</style>
 
 {activeSocial.length > 0 && (
   <ul class={listClasses}>
