@@ -1,26 +1,24 @@
 ---
-import '../assets/fonts/bootstrap-icons.css';
+import { Icon } from 'astro-icon/components';
 
 const { social, align } = Astro.props;
 
 const activeSocial = Object.entries(social).filter(([_, url]) => url && url !== '');
 
 const socialIcons = {
-  'StackOverflow': 'bi-stack-overflow',
-  'Twitter': 'bi-twitter-x',
+  twitter: 'simple-icons:x',
+  stackoverflow: 'simple-icons:stackoverflow',
 } as Record<string, string>;
 
 const defaultSocials = [
-  'Linkedin', 'Mastodon', 'Bluesky', 'Threads', 'Instagram',
-  'Pinterest', 'Snapchat', 'Facebook', 'Vimeo', 'YouTube',
-  'TikTok', 'Twitch', 'Spotify', 'GitHub', 'GitLab',
-  'Discord', 'Behance', 'Dribbble', 'Reddit', 'Quora',
-  'Substack', 'Medium', 'WordPress', 'WhatsApp', 'Telegram', 'Strava'
+  'linkedin', 'mastodon', 'bluesky', 'threads', 'instagram', 'pinterest',
+  'snapchat', 'facebook', 'vimeo', 'youtube', 'tiktok', 'twitch', 'bandcamp', 'soundcloud', 
+  'tidal', 'spotify', 'github', 'gitlab', 'codeberg', 'discord', 'behance', 'dribbble', 
+  'reddit', 'quora', 'substack', 'medium', 'wordpress', 'whatsapp', 'telegram', 'strava',
 ];
 
 for (const social of defaultSocials) {
-  const iconLower = social.toLowerCase().replace(/([a-z])([A-Z])/g, '$1-$2');
-  socialIcons[social] = `bi-${iconLower}`;
+  socialIcons[social] = `simple-icons:${social}`;
 }
 
 let listClasses = 'flex items-center flex-wrap gap-2 text-base';
@@ -32,12 +30,24 @@ if( align === 'center' ) {
 
 {activeSocial.length > 0 && (
   <ul class={listClasses}>
-    {activeSocial.map(([platform, url]) => (
-      <li>
-        <a class="grid place-content-center text-dark bg-light rounded-full w-8 h-8 hover:bg-accent focus:bg-accent hover:scale-105 focus:scale-105 transition duration-500" href={url} aria-label={platform} target="_blank" rel="noopener noreferrer">
-          <i class={`${socialIcons[platform] || 'bi-link'}`}></i>
-        </a>
-      </li>
-    ))}
+    {activeSocial.map(([platform, url]) => {
+      const iconName =
+        socialIcons[platform.toLowerCase()] ??
+        'simple-icons:link';
+
+      return (
+        <li>
+          <a
+            class="grid place-content-center text-dark bg-light rounded-full w-8 h-8 hover:bg-accent focus:bg-accent hover:scale-105 focus:scale-105 transition duration-500"
+            href={url}
+            aria-label={platform}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon name={iconName} />
+          </a>
+        </li>
+      );
+    })}
   </ul>
 )}

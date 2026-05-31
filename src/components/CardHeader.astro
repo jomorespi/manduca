@@ -13,12 +13,22 @@ if( deco === 'all' || deco === 'avatar' ) {
 }
 
 if(align === 'center') {
-  headerClasses = headerClasses + ' flex-col items-center';
+  headerClasses = headerClasses + ' flex-col-reverse items-center';
   lineClasses = lineClasses + ' mx-auto';
+} else {
+  headerClasses = headerClasses + ' flex-row-reverse';
+
 }
 ---
 
 <header class={headerClasses}>
+  <div class="flex-grow">
+    <h1 class="font-semibold text-lg">{ name }</h1>
+    { (deco === 'all' || deco === 'lines') && 
+      <div aria-hidden="true" class={lineClasses}></div> 
+    }
+    {bio && <p class="mt-0.5 text-muted">{bio}</p>}
+  </div>
   <div class={imgClasses}>
     <img
       src={avatarPath}
@@ -34,14 +44,6 @@ if(align === 'center') {
     { (deco === 'all' || deco === 'avatar') && 
       <div aria-hidden="true" class="w-4 h-4 border-2 border-bg rounded-full absolute bottom-0 right-0 bg-accent"></div> 
     }
-  </div>
-  
-  <div>
-    <h1 class="font-semibold text-lg">{ name }</h1>
-    { (deco === 'all' || deco === 'lines') && 
-      <div aria-hidden="true" class={lineClasses}></div> 
-    }
-    {bio && <p class="mt-0.5 text-muted">{bio}</p>}
   </div>
 </header>
 

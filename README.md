@@ -84,7 +84,7 @@ Just add your links following the examples in the file. They will appear on the 
 
 #### Social
 
-The available social media icons are: Linkedin, Mastodon, Bluesky, Threads, Twitter, Instagram, Pinterest, Snapchat, Facebook, Vimeo, YouTube, TikTok, Twitch, Spotify, GitHub, GitLab, StackOverflow, Discord, Behance, Dribbble, Reddit, Quora, Substack, Medium, WordPress, WhatsApp, Telegram and Strava.
+The available social media icons are: Linkedin, Mastodon, Bluesky, Threads, Twitter, Instagram, Pinterest, Snapchat, Facebook, Vimeo, YouTube, TikTok, Twitch, Bandcamp, SoundCloud, Tidal, Spotify, GitHub, GitLab, Codeberg, StackOverflow, Discord, Behance, Dribbble, Reddit, Quora, Substack, Medium, WordPress, WhatsApp, Telegram and Strava.
 
 If you add a custom item, it will also appear with a link icon:
 
