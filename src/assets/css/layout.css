@@ -4,11 +4,6 @@
         text-underline-offset: .25rem;
     }
 
-    [class^="bi-"]::before, 
-    [class*=" bi-"]::before {
-        font-display: swap!important;
-    }
-
     .page-content {
         :where(h1, h2, h3, h4, h5, h6, p, ol, ul, dl,  dd, blockquote) {
             margin-bottom: 1rem;
