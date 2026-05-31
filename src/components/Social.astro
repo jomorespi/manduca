@@ -3,6 +3,8 @@ import { Icon } from 'astro-icon/components';
 
 const { social, align } = Astro.props;
 
+const fallbackIcon = 'heroicons:link';
+
 const activeSocial = Object.entries(social).filter(([_, url]) => url && url !== '');
 
 const socialIcons = {
@@ -31,9 +33,8 @@ if( align === 'center' ) {
 {activeSocial.length > 0 && (
   <ul class={listClasses}>
     {activeSocial.map(([platform, url]) => {
-      const iconName =
-        socialIcons[platform.toLowerCase()] ??
-        'simple-icons:link';
+      const key = platform.toLowerCase();
+      const iconName = socialIcons[key] ?? fallbackIcon;
 
       return (
         <li>
