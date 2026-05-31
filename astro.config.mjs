@@ -5,10 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 // https://astro.build/config
 export default defineConfig({
   vite: {
-    plugins: [tailwindcss()],
-    build: {
-      assetsInlineLimit: 100000
-    }
+    plugins: [tailwindcss()]
   },
   build: {
     relative: true,
