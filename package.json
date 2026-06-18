@@ -12,16 +12,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.3.0",
-    "astro": "^6.4.2",
+    "@tailwindcss/vite": "^4.3.1",
+    "astro": "^6.4.8",
     "astro-icon": "^1.1.5",
-    "tailwindcss": "^4.3.0"
+    "tailwindcss": "^4.3.1"
   },
   "overrides": {
     "vite": "^7.0.0"
   },
   "devDependencies": {
     "@iconify-json/heroicons": "^1.2.3",
-    "@iconify-json/simple-icons": "^1.2.84"
+    "@iconify-json/simple-icons": "^1.2.86"
   }
 }
