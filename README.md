@@ -138,3 +138,5 @@ If this theme has been helpful for you, please consider **giving it a star on Gi
 Your support helps me stay motivated to build more themes and keep improving them. 
 
 Thank you!
+
+[![GitHub stars](https://img.shields.io/github/stars/jomorespi/manduca?style=social)](https://github.com/jomorespi/manduca)
