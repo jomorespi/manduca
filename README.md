@@ -131,12 +131,8 @@ Astro's power is enormous, starting with the ease of generating static pages wit
 
 Feel free to check the [Astro documentation](https://docs.astro.build) or jump into the Astro [Discord server](https://astro.build/chat).
 
-## ❤️ Support
+## Support
 
-If this theme has been helpful for you, please consider **giving it a star on GitHub**. 
-
-Your support helps me stay motivated to build more themes and keep improving them. 
-
-Thank you!
+If this theme has been helpful for you, please consider **giving it a star on GitHub**.
 
 [![GitHub stars](https://img.shields.io/github/stars/jomorespi/manduca?style=social)](https://github.com/jomorespi/manduca)
